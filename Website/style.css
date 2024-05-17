@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.body {
+    font-family: "Poetsen One", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: lightblue;
+    cursor: pointer;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.navbar-menu-toggle :hover {
+    cursor: pointer;
+
+
+}
+
+.side-navbar {
+    background-color: #1d232c;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    display: none;
+
+
+}
+
+.side-navbar {
+    cursor: pointer;
+}
+
+.side-navbar-links {
+    margin-bottom: 30%;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+
+}
+
+.services {
+    padding: 20px;
+}
+
+.service-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.Arrival {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container {
+    position: relative;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.new-arrival button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border: none;
+
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.news input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid black;
+    width: 80vw;
+}
+
+.news button {
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: lightsalmon;
+
+}
+
+.Footer-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.product-section {
+
+    margin-top: 20px;
+}
+
+.product-search {
+    width: 80%;
+    border: solid black;
+    display: flex;
+    left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.product-search input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.product-search input :focus {
+    outline: none;
+
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.products-box img {
+    border-radius: 10px;
+}
+
+.contac {
+    background-color: lightslategray;
+    padding-left: 50px;
+    margin-left: 100px;
+    width: 80%;
+    height: 350px;
+    align-items: center;
+
+
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+   
+}
+
+.contac div {
+
+
+    position: relative;
+    top: 40px;
+}
+
+.contac input {
+    width: 70%;
+    height: 30px;
+
+}
+
+.nam {
+    font-size: 20px;
+
+}
+
+.mai {
+    font-size: 20px;
+
+}
+
+.msgg {
+    font-size: 20px;
+
+
+}
+.msg input{
+   height: 50px;
+    
+
+}
+
+
+
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service-container-1 {
+        display: none;
+    }
+
+    .custom {
+        display: none;
+    }
+
+    .service-container-2 {
+        flex-direction: column;
+    }
+    .contac{
+        display: none;
+    }
+}
